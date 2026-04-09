@@ -30,7 +30,6 @@ jobs:
         run: npx cap add ios || npx cap sync ios
 
       - name: Build iOS App with Xcode
-      - name: Build iOS App with Xcode
         run: |
           xcodebuild \
             -project ios/App/App.xcodeproj \
@@ -40,7 +39,6 @@ jobs:
             -derivedDataPath Build/ \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO
-
 
       - name: Package .app to .ipa
         run: |
