@@ -1,0 +1,2 @@
+/* StaffLayout uses CustomerLayout CSS for shared .mobile-shell, .bottom-nav, .nav-item etc. */
+@import './CustomerLayout.css';

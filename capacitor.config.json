@@ -1,0 +1,6 @@
+{
+  "appId": "com.berbertest.app",
+  "appName": "Berber Test",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
