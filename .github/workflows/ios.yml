@@ -30,15 +30,17 @@ jobs:
         run: npx cap add ios || npx cap sync ios
 
       - name: Build iOS App with Xcode
+             - name: Build iOS App with Xcode
         run: |
           xcodebuild \
-            -workspace ios/App/App.xcworkspace \
+            -project ios/App/App.xcodeproj \
             -scheme App \
             -configuration Release \
             -sdk iphoneos \
             -derivedDataPath Build/ \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO
+
 
       - name: Package .app to .ipa
         run: |
